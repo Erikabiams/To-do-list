@@ -1,0 +1,202 @@
+/* GERAL */
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1E2A5E;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(../img/flower.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+h1{
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-size: 50px;
+}
+.btn-adicionar{
+    border-radius: 12px;
+    margin-top: 5px;
+    width: 35px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    background: #227B94;
+    color: #F5F5F7;
+    border: 2px solid #F5F5F7;
+    border-radius: 8px;
+    padding: 0.3rem 0.6rem;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+
+button:hover{
+    background-color: #125B9A;
+}
+
+button :hover>i{
+    color: #F5F5F7;
+}
+
+button i{
+    color: #c3dedc;
+    font-weight: bold;
+    pointer-events: none;
+}
+
+input,
+select{
+    height: 40px;
+    background: #c3dedc;
+    border: 2px solid #F5F5F7;
+    border-radius: 8px;
+    padding: 0.25rem 0.5rem;
+}
+
+.hide{
+    display: none;
+}
+
+/* todo header */
+.to-do-container{
+    /* border: 1px solid #125B9A; */
+    max-width: 550px;
+    margin: 3rem auto ;
+    background-color: transparent;
+    padding: 1.5rem;
+    border-radius: 15px;
+}
+
+.to-do-container header{
+    text-align: center;
+    padding: 0 1rem 1rem;
+    border-bottom: 1px solid #125B9A;
+}
+
+/* TODO FORM */
+#to-do-form, #edit-form{
+    padding: 1rem;
+    border-bottom: 1px solid #125B9A;
+}
+
+#to-do-form p, #edit-form p{
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-control{
+    display: flex;   
+}
+
+.form-control input{
+    margin: 0.3rem;
+}
+
+#cancel-edit-btn{
+    margin-top: 1rem;
+}
+
+/* TO-DO TOOLBAR */
+#toolbar{
+    padding: 1rem;
+    border-bottom: 1px solid #125B9A;
+    display: flex;
+}
+
+#toolbar h4{
+    margin-bottom: .5rem;
+}
+
+#search{
+    padding-right: 1rem;
+    margin-right: 1rem ;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+}
+#search form{
+    display: flex;
+}
+#search input{
+    width: 100%;
+    margin-right: 0.3rem;
+}
+
+#filtrar{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+}
+
+#filtrar select{
+    flex: 1;
+}
+
+.edit{
+    display: flex;
+    
+}
+
+/* TO-DO-LIST */
+.todo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid #125B9A;
+    padding: 1rem;
+    transition: .3s;
+}
+.todo{
+    background-color: #c3dedc;
+    border-radius: 4px;
+}
+.todo h3{
+    flex:1;
+    font-size: 0.9rem;
+}
+.todo button{
+    margin-left: 0.4rem;
+}
+
+.done{
+    background-color: #1E2A5E;
+}
+.done h3{
+    color: #F5F5F7;
+    text-decoration-line: line-through;
+    font-style: italic;
+}
+
+@media (max-width: 600px) {
+    body {
+        background-image: url('../img/responsivo.jpg'); /* Imagem para telas pequenas */
+    }
+    .to-do-container{
+        background-color: transparent;
+        margin: 50px auto 0;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .todo{
+        background-color: #c3dedc;
+        border-radius: 4px;
+    }
+    
+    .done{
+    background-color: #1E2A5E;
+    }
+
+}
